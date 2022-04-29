@@ -1,0 +1,252 @@
+/* Large screens */
+@media only screen and (min-width : 1824px) {}
+
+/* Desktops and laptops */
+@media only screen and (min-width : 1224px) {}
+
+/* iPads (portrait and landscape) */
+@media only screen and (min-width : 768px) and (max-width : 1024px) {}
+
+/* iPads (landscape) */
+@media only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : landscape) {}
+
+/* iPads (portrait) */
+@media only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : portrait) {
+
+body {
+    padding: 0;
+}
+
+#wrap,
+#top_header,
+footer {
+       -moz-border-radius: 0;
+         -o-border-radius: 0;
+    -webkit-border-radius: 0;
+            border-radius: 0;
+}
+
+}
+
+/* Small tablet (landscape) */
+@media only screen and (min-width : 600px) and (max-width : 800px) {
+
+body {
+    padding: 0;
+}
+
+#wrap,
+#top_header,
+footer {
+       -moz-border-radius: 0;
+         -o-border-radius: 0;
+    -webkit-border-radius: 0;
+            border-radius: 0;
+}
+
+}
+
+/* Small tablet (portrait and landscape) */
+@media only screen and (max-width : 600px) {
+
+body {
+    padding: 0;
+}
+
+#wrap,
+#top_header,
+footer {
+       -moz-border-radius: 0;
+         -o-border-radius: 0;
+    -webkit-border-radius: 0;
+            border-radius: 0;
+}
+
+#header_wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+#top_header {
+    height: 5em;
+    border-bottom: dashed .2em #edecec;
+}
+
+#icon-nav {
+    display: block;
+    float: left;
+    margin: .5em 1em;
+}
+
+#icon-nav::before {
+    float: left;
+    content: '';
+    width: 3em;
+    height: .45em;
+    border-top: 1.1em double #8ec63f;
+    border-bottom: .35em solid #8ec63f;
+}
+
+#sitename {
+    float: left;
+    width: 74%;
+    text-align: left;
+    font-size: 2.5em;
+}
+
+#main_nav {
+    display: none;
+    padding-bottom: .5em;
+}
+
+article {
+    margin-top: 5em;
+    padding: .5em 1em;
+    background: none;
+}
+
+article.flat {
+    padding: .5em 1em;
+}
+
+article section {
+    margin: 1em;
+}
+
+article.c5 #content, article.c15 #content {
+    margin-left: 0;
+}
+
+article.c5 aside, article.c15 aside {
+    width: 100%;
+}
+
+aside {
+    float: none;
+    margin: 0;
+}
+
+#content_wrap.with_toc div.row_container {
+    display: none;
+}
+
+#side_nav {
+    display: none;
+}
+
+#side_nav.toc, #side_nav.breadcrumb {
+    display: block;
+    text-align: center;
+    width: 100%;
+    float: none;
+}
+
+#side_nav.toc {
+    padding-bottom: 1em;
+    font-size: larger;
+}
+
+#side_nav.toc h3 {
+    margin-top: .5em;
+}
+
+#side_nav.toc h3:first-child {
+    margin-top: 0;
+}
+
+#side_nav.toc ul {
+    padding: 0;
+}
+
+#side_nav.breadcrumb {
+    background-color: #edecec;
+    padding: .5em 0;
+    border-bottom: dashed .2em #404853;
+    line-height: 1em;
+    z-index: 1;
+    position: fixed;
+    top: 5em;
+    left: 0;
+}
+
+#side_nav.breadcrumb ul, #side_nav.breadcrumb ul li {
+    padding: 0;
+    margin: 0;
+    display: inline;
+}
+
+#side_nav.breadcrumb h3.selected::before {
+    content: ':';
+    margin-right: .5em;
+}
+
+#side_nav.breadcrumb h3.selected {
+    font-size: 1em;
+    display: inline;
+    padding: auto .25;
+}
+
+#side_nav.breadcrumb li.selected::before {
+    content: '>';
+    width: 1em;
+    margin: auto .5em;
+}
+
+#side_nav.breadcrumb li.selected a, #breadcrumb_root {
+    text-decoration: none;
+}
+
+#breadcrumb_root {
+    color: #404853;
+}
+
+.show_on_mobile {
+    display: block !important;
+    visibility: visible;
+}
+
+}
+
+/* Smartphones (portrait and landscape) */
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+
+article {
+    min-height: 15em;
+}
+
+.contact_box .img-container {
+    width: 5em;
+}
+
+}
+
+/* Smartphones (landscape) */
+@media only screen and (min-width : 321px) {}
+
+/* Smartphones (portrait) */
+@media only screen and (max-width : 320px) {
+
+/*
+#side_nav.breadcrumb {
+    top: 4em;
+}
+*/
+
+.contact_box .img-container {
+    display: none;
+}
+
+.contact_box .info-container {
+    padding: 0;
+}
+
+footer {
+    height: 6.5em;
+}
+
+}
+
+/* iPhone 4 */
+@media only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5) {}
